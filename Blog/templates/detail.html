@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+			{% load static %}
+			{% block body %}
+
+
+<body>
+{% for i in data %}
+<h1 style="color:#FFAC3A; text-transform: uppercase;">{{i.User}}</h1><br>
+<h3 style="font-family: inherit;">ur posts are</h3><br>
+
+<h3><strong>{{i.title}}</strong></h3><br>
+<img src="{{ i.image.url}}" style="width: 100%;"/><br>
+{% endfor %}
+</body>
+
+{% endblock %}
